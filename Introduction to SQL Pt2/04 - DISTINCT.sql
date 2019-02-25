@@ -11,9 +11,15 @@ DISTINCT returns a unique list of values with NO AGGREGATES APPLIED
 
 SELECT TOP 1000 * FROM Production.BillOfMaterials AS bom --the actual table
 
-SELECT DISTINCT bom.UnitMeasureCode
+SELECT DISTINCT bom.UnitMeasureCode 
 FROM Production.BillOfMaterials AS bom
 --only 3 values used
 
 
+SELECT bom.UnitMeasureCode , COUNT(bom.ComponentID)
+FROM Production.BillOfMaterials AS bom
+GROUP BY bom.UnitMeasureCode
+SELECT DISTINCT bom.UnitMeasureCode , COUNT(bom.ComponentID)
+FROM Production.BillOfMaterials AS bom
+GROUP BY bom.UnitMeasureCode
 --Combine the queries...?

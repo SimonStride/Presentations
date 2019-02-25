@@ -36,7 +36,7 @@ FROM	Purchasing.PurchaseOrderHeader AS poh
 		Purchasing.ShipMethod  AS shm
 			ON poh.ShipMethodID = shm.ShipMethodID
 WHERE	poh.OrderDate BETWEEN CAST('2014-01-01' AS DATE) AND CAST('2014-01-31' AS DATE)
-GROUP BY shm.Name --NO ALIAS
+GROUP BY shm.Name
 ;
 
 

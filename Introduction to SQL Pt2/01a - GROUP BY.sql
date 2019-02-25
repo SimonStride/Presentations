@@ -56,9 +56,9 @@ SELECT	poh.PurchaseOrderID
 FROM	Purchasing.PurchaseOrderHeader AS poh
 WHERE	poh.OrderDate BETWEEN CAST('2014-01-01' AS DATE) AND CAST('2014-01-31' AS DATE)
 
-
 --Option 2...enter aggregates!!!!
 SELECT	COUNT(*)			AS NumberOfRows
+		, COUNT(ShipMethodID)			AS CountOfShippingMethod
 		, SUM(poh.SubTotal) AS SumOfSubtotal
 		, SUM(TotalDue)		AS SumOfTotalDue
 FROM	Purchasing.PurchaseOrderHeader AS poh
@@ -97,6 +97,29 @@ WHERE	poh.OrderDate BETWEEN CAST('2014-01-01' AS DATE) AND CAST('2014-01-31' AS 
 GROUP BY ShipMethodID --This is the magic!
 ;
 
+
+SELECT	ShipMethodID
+		, RevisionNumber	--Not Grouped and will cause a failure
+		, COUNT(*)			AS NumberOfRows
+		, SUM(poh.SubTotal) AS SumOfSubtotal
+		, SUM(TotalDue)		AS SumOfTotalDue
+FROM	Purchasing.PurchaseOrderHeader AS poh
+WHERE	poh.OrderDate BETWEEN CAST('2014-01-01' AS DATE) AND CAST('2014-01-31' AS DATE)
+GROUP BY ShipMethodID --This is the magic!
+		, RevisionNumber
+;
+
+
+SELECT	ShipMethodID
+		, COUNT(RevisionNumber) AS CountOfRevisionNumber	--Not Grouped and will cause a failure
+		, COUNT(*)			AS NumberOfRows
+		, SUM(poh.SubTotal) AS SumOfSubtotal
+		, SUM(TotalDue)		AS SumOfTotalDue
+FROM	Purchasing.PurchaseOrderHeader AS poh
+WHERE	poh.OrderDate BETWEEN CAST('2014-01-01' AS DATE) AND CAST('2014-01-31' AS DATE)
+GROUP BY ShipMethodID --This is the magic!
+
+;
 
 
 

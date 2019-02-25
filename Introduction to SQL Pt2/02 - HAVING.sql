@@ -1,3 +1,5 @@
+USE AdventureWorks2017
+
 
 /*
 
@@ -48,7 +50,7 @@ FROM	Purchasing.PurchaseOrderHeader AS poh
 GROUP BY YEAR(poh.OrderDate)
 		, MONTH(poh.OrderDate)
 		, DATENAME(MONTH, poh.OrderDate)
-HAVING COUNT(*) > 1
+HAVING COUNT(*) > 20
 ;
 
 --Other aggregates can be used in HAVING too
@@ -71,7 +73,7 @@ FROM	Purchasing.PurchaseOrderHeader AS poh
 GROUP BY YEAR(poh.OrderDate)
 		, MONTH(poh.OrderDate)
 		, DATENAME(MONTH, poh.OrderDate)
-HAVING AVG(TotalDue) > 100000
+HAVING AVG(TotalDue) > 10000
 ;
 
 
@@ -91,3 +93,12 @@ GROUP BY YEAR(poh.OrderDate)
 		, MONTH(poh.OrderDate)
 		, DATENAME(MONTH, poh.OrderDate)
 ;
+
+
+--SELECT	SUM(TotalDue)
+--FROM	Purchasing.PurchaseOrderHeader AS poh
+--	LEFT JOIN
+--		Purchasing.ShipMethod  AS shm
+--			ON poh.ShipMethodID = shm.ShipMethodID
+--HAVING SUM(totalDue) > 0 and OrderDate between 
+--;
