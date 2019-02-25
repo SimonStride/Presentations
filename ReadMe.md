@@ -6,14 +6,33 @@ Free for reuse in community training/non-commercial environments provided credit
 
 ---
 
-## Why Bother with BIML?
+# Below is a summary of the Presentations hosted here
 
-    First Delivered: Feb 2015
-    SQL Southwest User Group
+---
 
-Introduction to BIML for SSIS in Visual Studio
+# Introduction to SQL Part 2
 
-Includes demos of writing BimlScript files in Visual Studio using BIDS Helper and compiling SSIS packages.
+    First Delivered: Feb 2019
+    University of Exeter IT Lunchtime Sesions
+
+Beginner-level session on writing SQL Statements. Introducing 
+* GROUP BY
+* HAVING
+* ORDER BY
+* Subqueries
+
+---
+
+# Introduction to SQL Part 1
+
+    First Delivered: Jan 2019
+    University of Exeter IT Lunchtime Sesions
+
+Beginner-level session on writing SQL Statements. Introducing
+* SELECT
+* FROM
+* WHERE
+* INNER/LEFT JOIN
 
 ---
 
@@ -34,29 +53,14 @@ Includes:
 
 ---
 
-# Introduction to SQL Part 1
+## Why Bother with BIML?
 
-    First Delivered: Jan 2019
-    University of Exeter IT Lunchtime Sesions
+    First Delivered: Feb 2015
+    SQL Southwest User Group
 
-Beginner-level session on writing SQL Statements. Introducing
-* SELECT
-* FROM
-* WHERE
-* INNER/LEFT JOIN
+Introduction to BIML for SSIS in Visual Studio
 
----
-
-# Introduction to SQL Part 2
-
-    First Delivered: Feb 2019
-    University of Exeter IT Lunchtime Sesions
-
-Beginner-level session on writing SQL Statements. Introducing 
-* GROUP BY
-* HAVING
-* ORDER BY
-* Subqueries
+Includes demos of writing BimlScript files in Visual Studio using BIDS Helper and compiling SSIS packages.
 
 ---
 
