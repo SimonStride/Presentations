@@ -10,6 +10,15 @@ Free for reuse in community training/non-commercial environments provided credit
 
 ---
 
+# Source Control
+
+    First Delivered: Feb 2019
+    University of Exeter
+    
+Basics of using Source Control using BitBucket (hosted Git) as an example to store and share code including version history.
+
+---
+
 # Introduction to SQL Part 2
 
     First Delivered: Feb 2019
