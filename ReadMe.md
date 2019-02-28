@@ -12,14 +12,13 @@ Below is a brief summary of the Presentations hosted here. All sessions aimed to
 
     First Delivered: Feb 2019
     University of Exeter IT Lunchtime Sessions
-    ***Work in Progress***
     
 Introduction to the Python language for the uninitiated! A super-fast look at the following:
     * Getting Started - Pip and Conda
     * Writing Python in Jupyter notebooks
     * Functions and classes
     * Libraries
-    * Hello World Flask app
+    * Basic flask app
 
 ---
 
