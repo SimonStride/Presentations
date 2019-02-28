@@ -4,13 +4,35 @@ Public Repo for Presentations/public sessions I have delivered or drafted. All c
 
 Free for reuse in community training/non-commercial environments provided credit attributed back to original author.
 
----
-
-# Below is a summary of the Presentations hosted here
+Below is a brief summary of the Presentations hosted here. All sessions aimed to run in 1 hour unless otherwise noted.
 
 ---
 
-# Introduction to SQL Part 2
+## Introduction to Python
+
+    First Delivered: Feb 2019
+    University of Exeter IT Lunchtime Sessions
+    ***Work in Progress***
+    
+Introduction to the Python language for the uninitiated! A super-fast look at the following:
+    * Getting Started - Pip and Conda
+    * Writing Python in Jupyter notebooks
+    * Functions and classes
+    * Libraries
+    * Hello World Flask app
+
+---
+
+## Source Control
+
+    First Delivered: Feb 2019
+    University of Exeter
+    
+Basics of using Source Control using BitBucket (hosted Git) as an example to store and share code including version history.
+
+---
+
+## Introduction to SQL Part 2
 
     First Delivered: Feb 2019
     University of Exeter IT Lunchtime Sesions
@@ -23,7 +45,7 @@ Beginner-level session on writing SQL Statements. Introducing
 
 ---
 
-# Introduction to SQL Part 1
+## Introduction to SQL Part 1
 
     First Delivered: Jan 2019
     University of Exeter IT Lunchtime Sesions
