@@ -8,6 +8,20 @@ Below is a brief summary of the Presentations hosted here. All sessions aimed to
 
 ---
 
+## SSRS 101
+
+    First Delivered: Mar 2019
+    University of Exeter IT Lunchtime Sessions
+    
+Introduction to the writing SSRS reports in Report Builder 3:
+    * Embedded Data Sources, Data Sets
+    * Tablix data tables
+    * Inline charts (databars) and indicators
+    * Simple Charts
+    * Overview of Mobile Reports
+
+---
+
 ## Introduction to Python
 
     First Delivered: Feb 2019
