@@ -10,6 +10,6 @@ functions
 
 params, calling other scripts
 
-outgridview
 
 start-VMs???
+

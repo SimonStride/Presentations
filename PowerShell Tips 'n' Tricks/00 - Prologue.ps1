@@ -2,6 +2,12 @@
 
 PROLOGUE
 
+* Written for version: 5.1.17134.590
+* Run these scripts with admin privileges
+
+
+#
+
 #>
 
 # In the beginning, there was command line. (Lets not talk about Bash...)

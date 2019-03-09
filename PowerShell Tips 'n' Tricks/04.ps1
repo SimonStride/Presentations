@@ -1,39 +1,28 @@
 <#
 
-One of PowerShell's growing strengths is the community drive
+04 - Saving to files
 
-
-# The PowerShell gallery hosts a wealth of community driven modules for you to use
-# https://www.powershellgallery.com/
-# ...or contribute to if you like.
-
-# PowerShellKonf Europe
-# The #PowerShellHelp tag on twitter is monitored 24/7
-# 
+* PowerShell makes handling files as objects super easy
 
 #>
 
+# clean setup
+Remove-Item outputs -Force -Recurse
+mkdir outputs -force
 
-# getting hold of modules is as easy as...
-Install-Module plaster
-Install-Module SqlServer
-Install-Module WriteAscii
+# Get the processes on a local or remote computer.
+# Store the data in a csv using a "|" delimiter
+Get-Process | Select-Object -Property Id,ProcessName,SI,StartTime,CPU | `
+        Export-Csv ".\outputs\processes.csv" -NoClobber -NoTypeInformation -Delimiter "|"
+        
+#View the file 
+notepad ".\outputs\processes.csv"
 
-# use a module by importing it...
-Import-Module sqlserverM
+# Pull back in the CSV
+$obj = Import-Csv ".\outputs\processes.csv" -Delimiter "|"
+$obj | sort-object CPU -Descending | select-object -First 10 | format-table
 
-# Get info about the module
-Get-Module SqlServer
-
-# Get information about the module
-Get-Help SqlServer
-
-# Run a SQL Query
-$Results = Invoke-Sqlcmd -serverInstance ".\SQL2017" -Database "AdventureWorks2017" -Query "SELECT TOP 10 * FROM Person.Person"
-$Results
-
-
-# loop through results
-$Results | ForEach-Object {
-    Write-Ascii $_.FirstName
-}
+# swap into json, xml, txt
+$obj | ConvertTo-Json | out-file ".\outputs\Json-processes.json" -NoClobber
+$obj | Export-Clixml ".\outputs\Xml-processes.xml" -NoClobber
+$obj | Format-Table | Out-File ".\outputs\Text-processes.txt" -NoClobber

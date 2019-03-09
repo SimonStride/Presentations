@@ -6,13 +6,14 @@ Cmdlets generally follow a descriptive verb-noun naming pattern
 
 #>
 
-#Examples
+# Examples
+# =================================================
+# Processes
 Get-Process
-
+# Services
 Get-Service
-
-Start-Process Notepad.exe
-
+# Hyper-V
+Get-VM
 
 
 # Get some info on the cmdlet
@@ -43,7 +44,7 @@ stop-process $Notepad.Id
 
 
 # Write a value to a file
-"a Value" > "a file.txt"
+"a value" > "a file.txt"
 
 # Open the file in notepad
 start-process notepad.exe -ArgumentList "./a file.txt"

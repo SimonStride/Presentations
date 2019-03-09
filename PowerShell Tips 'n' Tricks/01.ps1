@@ -22,7 +22,8 @@ Write-Host "I like colour!" -ForegroundColor Magenta
 
 Write-Warning "Hello, Warning!"
 
-Write-Error "Oh, sh..."
+Write-Host "The next bit will error on purpose:`n-------------------------------"
+Write-Error "OH, SH......`n...`n...`n...ELL!`n"
 
 
 
@@ -44,8 +45,22 @@ foreach($letter in $alphabet) {
 $alphabet[0]
 
 # if statements work as expected
+# BUT "=" is expressed as "-eq"
 if ($alphabet[0] -eq "a") {
     Write-Host "We're only at the start of the list!" -ForegroundColor Blue
 }
 
+# -gt ... Greater Than
+if ( 1 -gt 0 ) {
+    Write-Host "1 is indeed greater than 0"
+}
 
+# -gt ... Greater Than
+# -ge ... Greater Than or Equal To
+# -lt ... Less Than
+# -le ... Less Than or Equal To
+# -like
+# -in
+# -notin
+# -contains
+# -notcontains
