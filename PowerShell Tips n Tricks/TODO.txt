@@ -6,10 +6,6 @@ web-requests
 
 remote calls invoke-command
 
-functions
-
-params, calling other scripts
 
 
-start-VMs???
 

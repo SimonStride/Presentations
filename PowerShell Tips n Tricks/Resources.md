@@ -1,10 +1,22 @@
+# Resources
 
+## PowerShell Official Docs
 
-## PowerShell Books Online
+https://docs.microsoft.com/en-us/powershell/
 
 ## PowerShell Gallery
 
+https://www.powershellgallery.com/
+
 ## PowerShell Blogs
+
+https://sqldbawithabeard.com/
+https://blog.netnerds.net/author/chrissy/
+https://devblogs.microsoft.com/scripting/
+
+## Pester Tests
+
+https://github.com/pester/Pester/wiki/Pester
 
 ## Bash in PoSh - Windows Subsystem for Linux (WSL)
 

@@ -3,6 +3,7 @@
 Cmdlets are essentially functions, with parameters and switches
 
 Cmdlets generally follow a descriptive verb-noun naming pattern
+https://docs.microsoft.com/en-us/powershell/developer/cmdlet/approved-verbs-for-windows-powershell-commands
 
 #>
 
@@ -44,7 +45,7 @@ stop-process $Notepad.Id
 
 
 # Write a value to a file
-"a value" > "a file.txt"
+"a value" > "./outputs/a file.txt"
 
 # Open the file in notepad
 start-process notepad.exe -ArgumentList "./a file.txt"
