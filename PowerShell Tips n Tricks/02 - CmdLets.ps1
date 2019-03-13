@@ -57,8 +57,6 @@ stop-process $Notepad.Id
 Remove-Item "./a file.txt"
 
 
-
-
 # make a directory
 mkdir "dir"
 "more text" > "./dir/another file.txt"
@@ -68,3 +66,10 @@ Remove-Item "dir"
 mkdir "dir"
 "more text" > "./dir/another file.txt"
 Remove-Item "dir" -recurse
+
+
+# Other Cmdlets allow you to reach beyond your laptop....
+$Results = Invoke-WebRequest -Uri "www.google.co.uk" -Method "GET"
+$Results.StatusCode
+# View the whole lot...
+$Results

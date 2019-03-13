@@ -3,7 +3,7 @@
 PROLOGUE
 
 * Written for version: 5.1.17134.590
-* Run these scripts with admin privileges
+* Some of the scripts require admin privileges, although most will run fine without
 
 
 #
@@ -32,5 +32,5 @@ mkdir "PowerShell Tips 'n' Tricks"
 # Change directory, same as "cd"
 Set-Location "PowerShell Tips 'n' Tricks" 
 
-# Open the folder aka ii .
+# Open the folder Windows aka ii .
 Invoke-Item .

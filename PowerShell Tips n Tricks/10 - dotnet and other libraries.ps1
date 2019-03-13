@@ -26,3 +26,8 @@ git status
 git pull
 docker images
 
+
+
+
+# It's also possible to run commands on other PCs you have access to e.g.
+Invoke-Command -Computer "AnotherComputer" -ScriptBlock {Get-Process} -Credential ( Get-Credential )
