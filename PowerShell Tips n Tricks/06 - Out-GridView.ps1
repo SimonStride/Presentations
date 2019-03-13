@@ -38,10 +38,15 @@ $results | ForEach-Object {
 
 # Start a stopped VM
 # This script needs to be run as an admin
-Get-VM | Where-Object { $_.Status -eq "stopped" } | Out-GridView -PassThru | ForEach-Object {
+Get-VM | Where-Object { $_.State -eq "Off" } | Out-GridView -PassThru | ForEach-Object {
     $VMName = $_.Name
     Write-Host "Starting Hyper-V VM $VMName"
     Start-VM $VMName
 }
 
-
+# And switch it off again
+Get-VM | Where-Object { $_.State -ne "Off" } | Out-GridView -PassThru | ForEach-Object {
+    $VMName = $_.Name
+    Write-Host "Stopping Hyper-V VM $VMName"
+    Stop-VM $VMName
+}
