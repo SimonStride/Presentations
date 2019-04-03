@@ -18,9 +18,14 @@ Get-Process | Select-Object -Property Id,ProcessName,SI,StartTime,CPU | `
 #View the file 
 notepad ".\outputs\processes.csv"
 
+
+
 # Pull back in the CSV
-$obj = Import-Csv ".\outputs\processes.csv" -Delimiter "|"
+$obj = Import-Csv ".\outputs\processes.csv" -Delimiter "|" 
 $obj | sort-object CPU -Descending | select-object -First 10 | format-table
+
+
+
 
 # swap into json, xml, txt
 $obj | ConvertTo-Json | out-file ".\outputs\Json-processes.json" -NoClobber

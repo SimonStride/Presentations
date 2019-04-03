@@ -30,7 +30,11 @@ PROLOGUE
 mkdir "PowerShell Tips 'n' Tricks"
 
 # Change directory, same as "cd"
-Set-Location "PowerShell Tips 'n' Tricks" 
+Set-Location ".\PowerShell Tips n Tricks" 
 
 # Open the folder Windows aka ii .
 Invoke-Item .
+ii .
+
+
+

@@ -5,7 +5,7 @@
 #>
 
 # Variables
-$variableText = "string"
+[string]$variableText = "string"
 $variableInt = 1
 $variableDate = Get-Date
 
@@ -55,6 +55,7 @@ if ( 1 -gt 0 ) {
     Write-Host "1 is indeed greater than 0"
 }
 
+# -eq ... Equal To
 # -gt ... Greater Than
 # -ge ... Greater Than or Equal To
 # -lt ... Less Than

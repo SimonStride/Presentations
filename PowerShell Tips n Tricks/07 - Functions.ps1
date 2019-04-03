@@ -16,13 +16,14 @@ function Get-FileCountExample([string]$folderPath) {
 
 # Use the function
 Get-FileCountExample "C:\Projects\Presentations"
+Get-FileCountExample -folderPath "C:\Projects\Presentations" 
 
 
 # Or import functions from another file using a "." ref
 ./07a.ps1
 # Function is now loaded and can be called.
 # Parameters are called using dashes, rather than brackets
-Get-MyFileCount -sourceFolder "C:\Projects\Presentations"
+Get-MyFileCount "C:\Projects\Presentations\"
 
 
 # Another common way to call a script is to set parameters 
