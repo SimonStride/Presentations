@@ -14,10 +14,15 @@ separate files with the naming convention:
 
 
 # Unit Testing a simple function
- function Add-TwoStrings([string]$string1, [string]$string2) {
+function Add-TwoStrings([string]$string1, [string]$string2) {
     $output = $string1 + $string2
     return $output
 }
+
+Add-TwoStrings -string1 "abc" -string2 "wtf"
+
+
+
 # Tests for a CI Server
 Describe MyExampleFunction {
     It "Should join two string values" {
@@ -71,3 +76,4 @@ Describe LocalSQLService {
         (Get-Service -Name "MSSQL`$SQL2017").DisplayName | Should -Be "SQL Server (SQL2017)"
     }
 }
+

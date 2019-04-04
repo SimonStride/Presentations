@@ -29,8 +29,12 @@ PROLOGUE
 # Create a directory
 mkdir "PowerShell Tips n Tricks"
 
-# Change directory, same as "cd" in cmd, bash
-Set-Location "PowerShell Tips n Tricks" 
+# Change directory, same as "cd"
+Set-Location ".\PowerShell Tips n Tricks" 
 
 # Open the folder Windows aka ii .
 Invoke-Item .
+ii .
+
+
+

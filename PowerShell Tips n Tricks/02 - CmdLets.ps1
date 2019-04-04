@@ -27,6 +27,7 @@ Get-Help Get-Process -Examples
 $Processes = Get-Process
 #
 $Processes
+$Processes.GetType()
 
 # Get just one bit of info (use quotes for titles with spaces)
 $Processes."ProcessName"
@@ -48,13 +49,13 @@ stop-process $Notepad.Id
 "a value" > "./outputs/a file.txt"
 
 # Open the file in notepad
-start-process notepad.exe -ArgumentList "./a file.txt"
+start-process notepad.exe -ArgumentList "./outputs/a file.txt"
 # Try to close notepad
 $Notepad = (Get-process -Name Notepad)
 stop-process $Notepad.Id
 
 # Try to delete the file
-Remove-Item "./a file.txt"
+Remove-Item "./outputs/a file.txt"
 
 
 # make a directory
@@ -72,4 +73,6 @@ Remove-Item "dir" -recurse
 $Results = Invoke-WebRequest -Uri "www.google.co.uk" -Method "GET"
 $Results.StatusCode
 # View the whole lot...
-$Results
+$Results.InputFields
+
+$Results.GetType()

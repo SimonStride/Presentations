@@ -5,7 +5,7 @@
 #>
 
 # Variables
-$variableText = "string"
+[string]$variableText = "string"
 $variableInt = 1
 $variableDate = Get-Date
 
@@ -58,6 +58,7 @@ if ( 1 -gt 0 ) {
 #=============================================
 # EQUALITY OPERATORS - NOT THE USUAL!!!
 #=============================================
+# -eq ... Equal To
 # -gt ... Greater Than
 # -ge ... Greater Than or Equal To
 # -lt ... Less Than
