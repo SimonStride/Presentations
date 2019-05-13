@@ -8,6 +8,45 @@ Below is a brief summary of the Presentations hosted here. All sessions aimed to
 
 ---
 
+## The FairWeather DBA
+
+    TBC
+    
+DBA duties for non-DBAs - helping IT Professionals bridge the gap
+
+---
+
+## Power BI
+
+    First Delivered: Mar 2019
+    University of Exeter IT Lunchtime Sessions
+    
+Introduction to Power BI Desktop to "demystify" the toolset:
+    * Tool overview
+    * Importing a simple csv
+    * Creating basic visualisations
+    * Connecting to a SQL Server store
+    * Modifying tables in Data Model
+    * Basic demo of the Power Query module
+    * Learning Resources
+
+---
+
+## PowerShell Tips 'n' Tricks
+
+    First Delivered: Mar 2019
+    University of Exeter IT Lunchtime Sessions
+    Delivered as a 2-Part Session
+    
+Overview of PowerShells capbilities including:
+    * variables
+    * Control Loops
+    * Piping
+    * Classes and Functions
+    * A nod to WSL
+    
+---
+
 ## SSRS 101
 
     First Delivered: Mar 2019
