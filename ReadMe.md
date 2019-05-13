@@ -8,11 +8,21 @@ Below is a brief summary of the Presentations hosted here. All sessions aimed to
 
 ---
 
-## The FairWeather DBA
-
-    TBC
+## SQL Server Query Tuning
     
-DBA duties for non-DBAs - helping IT Professionals bridge the gap
+    First Delivered May 2019
+    University of Exeter IT Lunchtime Sessions
+
+Overview of SQL Query tuning including tooling examples, query restructuring, adding indexes
+
+---
+
+## The Occasional DBA
+
+    First Delivered April 2019
+    University of Exeter IT Lunchtime Sessions
+    
+DBA duties for non-DBAs - helping IT Professionals understand databases
 
 ---
 
