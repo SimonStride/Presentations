@@ -1,0 +1,10 @@
+# Simple docker file to build on a base ubuntu image and install the tree utility
+FROM ubuntu
+
+# Installation commands
+RUN apt-get update && apt-get install tree
+
+# Set the working directory
+WORKDIR /usr/local
+
+
