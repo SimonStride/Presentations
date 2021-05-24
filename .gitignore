@@ -1,3 +1,4 @@
 *.code-workspace
 ZoomIt/
 PowerShell Tips*Tricks/outputs/*
+**/.ipynb_checkpoints/*
