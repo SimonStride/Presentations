@@ -1,88 +1,72 @@
 # Python
 
----
+Getting up and running in as few steps as possible...
 
-Getting up and running in as few steps as possible
-
-    def Python():
-        return "And now for something completely different"
+````python
+def Python():
+    return "And now for something completely different"
+````
 ![alt text](/img/monty-python.jpg)
-
----
-
 
 
 ## Agenda
 
----
 1. What is Python?
 2. What do I need to get started?
 3. Dive in!
 
 
-
 ## What is Python?
 
-
 Python is an interpreted, high-level, dynamically typed, general purpose language
-
 
 Named after Monty Python's Flying Circus
 ![alt text](/img/monty-python.jpg)
 
-
 Released in 1991 by Guido Van Rossum
-
 
 Now managed by the non-profit Python Software Foundation
 
-
 Python is open source and runs on Windows, Mac and Linux
-
 
 Available for free from https://www.python.org
 
 
-
 ## Ingredients
 
----
-1. Python Runtime (3.4+)
+1. Python Runtime (recommend 3.8+)
 2. Text Editor or IDE 
 
 AND/OR use Pip/Conda to install Jupyter
 
-
 And that's it!
-
 
 
 ## Option 1 - Python
 
----
 https://www.python.org
 
 This provides the bare minimum you need to start writing Python
 
 Use Pip to install all the libraries you need
 
-    pip install ...
-
+````bash
+pip install mylibrary
+````
 
 
 ## Option 2 - Anaconda
 
----
 https://www.anaconda.com/
 
 ![Anaconda](/img/anaconda.png)
 
 Anaconda Distribution is a free and comes with a bundle of related software. 
 
+````bash
     # Install additional libraries with 
-
-    conda install ...
-
+    conda install mylibrary
+````
 
 ### Anaconda continued...
 
@@ -95,27 +79,22 @@ Available in Python 3.7 or 2.7 (don't ask) and is designed to give a "headstart"
 ![anaconda features](/img/distro-01-1.png)
 
 
-
 ## Python Installed...
 ### What Next?
 
----
 Jupyter is a great way to play with Python (as well as for analytics and demos!)
 
+````bash
     # Run the following in CmdLine, PowerShell or Bash
-
     pip install jupyter
     mkdir notebooks
     cd notebooks
     jupyter notebook
-
+````
 
 Open up your browser to:
-
-http://localhost:8888
-
-(might be opened automatically)
-
+    http://localhost:8888
+_(might be opened automatically)_
 
 
 ## Demos
@@ -135,15 +114,13 @@ Try...Except
 Like any good language!
 
 
-
 ## Libraries
 
----
 External libraries are a **huge** part of the Python ecosystem
-
 
 My libraries at time of writing:
 
+````bash
     arrow==0.13.0
     astroid==2.1.0
     backcall==0.1.0
@@ -247,56 +224,41 @@ My libraries at time of writing:
     whichcraft==0.5.2
     widgetsnbextension==3.4.2
     wrapt==1.10.11
+````
 
-
-## Demo - Using Libraries
-
+### Demo - Using Libraries
 
 
 ## Dev Tools
 
----
 * Python can be run from the command line
 * Idle Python shell is pretty basic
 * For best results...
 
-
-### Visual Studio Code
-
+### Visual Studio Code  
 ![vscode](/img/vscode.png)
 
-
 ### PyCharm
-
 ![pycharm](/img/pycharm.png)
-
 
 ### Spyder
 ![spyder](/img/spyder.png)
 
 
-
 ## Demo
 
----
 ### Interactive VS Code
 
 
-
 ## Demo - Flask
-
----
 
 * Flask is a well known and widely used "microframework" web server
 * It contains the barebones for creating a fully fledged web service including routing and RESTful request dispatching
 * You bring the other components you need e.g. ORM/ODM
-
-http://flask.pocoo.org
+* http://flask.pocoo.org
 
 
 ## Demo - Flask
-
----
 
 Also, this Presentation is running on a flask app (see the source code on GitHub)
 

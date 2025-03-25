@@ -12,6 +12,10 @@ def send_js(path):
 def send_css(path):
     return send_from_directory('css', path)
 
+@app.route('/dist/<path:path>')
+def send_dist(path):
+    return send_from_directory('dist', path)
+
 @app.route('/img/<path:path>')
 def send_img(path):
     return send_from_directory('img', path)
@@ -27,6 +31,10 @@ def send_plugin(path):
 @app.route('/slides/<path:path>')
 def send_slides(path):
     return send_from_directory('slides', path)
+
+@app.route('/template/<path:path>')
+def send_template(path):
+    return send_from_directory('template', path)
 
 
 # Home root route

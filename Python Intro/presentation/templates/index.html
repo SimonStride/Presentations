@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang="en">
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -7,29 +7,32 @@
 		<title>Simon Stride</title>
 		<meta name="author" content="Simon Stride">
 
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/sky.css">
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/sky.css">
 
 		<!-- Theme used for syntax highlighting of code -->
-		<link rel="stylesheet" href="lib/css/zenburn.css">
+		<!--link rel="stylesheet" href="plugin/highlight/zenburn.css"-->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
 
 		<!-- Printing and PDF exports -->
 		<script>
 			var link = document.createElement( 'link' );
 			link.rel = 'stylesheet';
 			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.scss' : 'css/print/paper.scss';
 			document.getElementsByTagName( 'head' )[0].appendChild( link );
 		</script>
 	</head>
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section data-markdown="slides/PythonIntroduction.md"
-						data-separator="^\r?\n\r?\n\r?\n"
-						data-separator-vertical="^\r?\n\r?\n"
-						data-separator-notes="^Note:"
-						data-charset="iso-8859-15">
+				<section data-markdown="/slides/PythonIntroduction.md"
+				data-separator="^\n\n"
+				data-separator-vertical="^\n"
+				data-separator-notes="^Note:"
+				data-charset="iso-8859-15"
+				></section>
 					<!--
 						Note that Windows uses `\r\n` instead of `\n` as its linefeed character.
 						For a regex that supports all operating systems, use `\r?\n` instead of `\n`.
@@ -38,8 +41,11 @@
 			</div>
 		</div>
 
-		<script src="lib/js/head.min.js"></script>
-		<script src="js/reveal.js"></script>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
 
 		<script>
 			// More info about config & dependencies:
@@ -47,14 +53,18 @@
 			// - https://github.com/hakimel/reveal.js#dependencies
 			Reveal.initialize({
 				// Transition style for full page slide backgrounds
-				backgroundTransition: 'concave', // none/fade/slide/convex/concave/zoom
+				//backgroundTransition: 'concave', // none/fade/slide/convex/concave/zoom
 
-				dependencies: [
-					{ src: 'plugin/markdown/marked.js' },
-					{ src: 'plugin/markdown/markdown.js' },
-					{ src: 'plugin/notes/notes.js', async: true },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
-				]
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+				//dependencies: [
+				//	{ src: 'plugin/markdown/marked.js' },
+				//	{ src: 'plugin/markdown/markdown.js' },
+				//	{ src: 'plugin/notes/notes.js', async: true },
+				//	{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				//]
 			});
 		</script>
 	</body>
